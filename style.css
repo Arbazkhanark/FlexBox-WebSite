@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    background-color: rgb(44, 218, 160);
+    color: white;
+    padding: 80px;
+    flex-basis: content;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    background-color: black;
+    padding: 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.content{
+    display: flex;
+}
+
+.about{
+    background-color: rgb(230, 222, 222);
+    flex-basis: 50%;
+    padding: 10px;
+    padding-top: 20px;
+}  
+
+.about p{
+    margin-top: 15px;
+}
+
+.img{
+    background-color: rgb(184, 180, 180);
+    margin: 10px 0 10px 0;
+    height: 150px;
+}
+
+.more{
+    margin: 20px 0 5px 0;
+}
+
+.more .img{
+    height: 40px;
+    display: flex;
+}
+.more .img p{
+    align-self: center;
+    margin-left: 10px;
+}
+
+.body{
+    padding: 20px;
+    /* padding-left: 20px; */
+}
+.body p{
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: rgb(211, 205, 205);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu a:hover{
+        background-color: gray;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+  }
